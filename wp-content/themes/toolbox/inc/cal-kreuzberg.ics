@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20120928T203000
+DTEND;TZID=Europe/Berlin:20120928T233000
+SUMMARY:ComedySportz in X-berg (T berlin)
+LOCATION: <a href="http://www.facebook.com/tberlinkreuzberg">T berlin</a> <a href="http://maps.google.de/maps?q=52.48716,+13.389064(T berlin)">MAP</a>
+DESCRIPTION:<a href='https://www.facebook.com/events/461198280577623' class='uibutton confirm'>Event on Facebook</a><br><br><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/276420_461198280577623_1295271385_s.jpg" alt="" class="img" />Catch us in the T berlin basement. PURE IMPROVISED FUN.
+
+Tickets at the door. 5€
+FREE SHOT OF VODKA by reserving a seat. Send Noah an email: noah[at]comedysportz[dot]de
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20120914T203000
+DTEND;TZID=Europe/Berlin:20120914T233000
+SUMMARY:ComedySportz in X-berg (T berlin)
+LOCATION: <a href="http://www.facebook.com/tberlinkreuzberg">T berlin</a> <a href="http://maps.google.de/maps?q=52.48716,+13.389064(T berlin)">MAP</a>
+DESCRIPTION:<a href='https://www.facebook.com/events/496940170334169' class='uibutton confirm'>Event on Facebook</a><br><br><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc6/276807_496940170334169_166346956_s.jpg" alt="" class="img" />Catch us in the T berlin basement. PURE IMPROVISED FUN.
+
+Tickets at the door. 5€
+FREE SHOT OF VODKA by reserving a seat. Send Noah an email: noah[at]comedysportz[dot]de
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR

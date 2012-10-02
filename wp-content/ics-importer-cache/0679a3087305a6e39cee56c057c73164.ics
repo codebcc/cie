@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>Fehler im Kalender</title>
+<style type="text/css">
+body,td,div,.p,a,font,span {font-family: arial,sans-serif}
+.bubble {background-color:#e3e9ff}
+td.tl {background-image: url(/calendar/images/corner_tl_gmail.gif);
+background-position:top left;background-repeat:no-repeat}
+td.tr {background-image: url(/calendar/images/corner_tr_gmail.gif);
+background-position:top right;background-repeat:no-repeat}
+td.bl {background-image: url(/calendar/images/corner_bl_gmail.gif);
+background-position:bottom left;background-repeat:no-repeat}
+td.br {background-image: url(/calendar/images/corner_br_gmail.gif);
+background-position:bottom right}
+
+#loadingItem {display: none}
+</style></head>
+<body bgcolor="#ffffff" style="margin-top:2px; "><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0"><tr valign="top"><td width="1%"><a href="http://www.google.com/calendar"><img border="0" height="30" align="left" vspace="10" style="padding-top:14px;padding-right:8px" alt="Google Kalender" src="/calendar/images/calendar_logo_sm_de.gif"></a></td>
+<td width="99%" bgcolor="#ffffff" valign="top"><table width="100%" cellpadding="1"><tr valign="bottom"><td><div align="right">&nbsp;</div></td></tr>
+<tr><td nowrap><table width="100%" align="center" cellpadding="0" cellspacing="0" style="margin-bottom:5px;background:#e3e9ff"><tr><td class="bubble tl" width="4"></td>
+<td class="bubble" rowspan="2" style="font-family:arial;text-align:left;font-weight:bold;padding:3px,0px;"><b>Fehler im Kalender</b></td>
+<td class="bubble tr" width="4"></td></tr>
+<tr><td class="bubble bl" width="4"></td>
+<td class="bubble br" width="4"></td></tr></table></td></tr></table></td></tr></table>
+<br>
+<table width="94%" border="0" align="center" cellpadding="5" cellspacing="0"><tr valign="top"><td>Fehler beim Verarbeiten eines Feeds</td></tr>
+</table>
+<br><br>
+<table width="95%" align="center" cellpadding="3" cellspacing="0" style="margin-bottom:5px;background:#e3e9ff"><tr><td class="bubble tl" width="4"></td>
+<td class="bubble" rowspan="2" style="font-family:arial;text-align:center;"><font size="-1" color="#666">&copy;2012
+Google -
+<a href="http://www.google.com">Google-Startseite</a></font></td>
+<td class="bubble tr" width="4"></td></tr>
+<tr><td class="bubble bl" width="4"></td>
+<td class="bubble br" width="4"></td></tr></table></body></html>

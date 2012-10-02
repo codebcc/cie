@@ -1,0 +1,538 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"men",
+				"menu-category-menu"
+			],
+			[
+				"pho",
+				"photographer"
+			],
+			[
+				"photo",
+				"photographer_url"
+			],
+			[
+				"galler",
+				"gallery_description"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"post",
+				"posts_array"
+			],
+			[
+				"pos",
+				"posts_array"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"acc",
+				"access_token"
+			],
+			[
+				"bg",
+				"bg-b"
+			],
+			[
+				"arti",
+				"article"
+			],
+			[
+				"ta",
+				"tabbed_left"
+			],
+			[
+				"cate",
+				"categoryLink"
+			],
+			[
+				"tabbed_",
+				"tabbed_box"
+			],
+			[
+				"tabb",
+				"tabbed_boxes"
+			],
+			[
+				"getP",
+				"getPos"
+			],
+			[
+				"getS",
+				"getSelectedAttrs"
+			],
+			[
+				"el",
+				"elems"
+			],
+			[
+				"DATA",
+				"ccData"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				":w",
+				":w - Save"
+			]
+		],
+		"width": 440.0
+	},
+	"console":
+	{
+		"height": 129.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/page-about-us.php",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/head.php",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/inc/team_member_post.php",
+		"/home/the-cliff/web2/sms/.htaccess",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/js/general.js",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/style.css",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/inc/our-team.inc",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/inc/jobs.inc",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/page-impressum.php",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/category.php",
+		"/home/the-cliff/web2/sms/wp-content/plugins/breadcrumb-navxt/breadcrumb_navxt_admin.php",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/page-about.php",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/functions.php",
+		"/home/the-cliff/web2/sms/wp-config.php",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/header.php",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/page-agb.php",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/page.php",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/sidebar-page.php",
+		"/home/the-cliff/web2/sms/wp-content/themes/smstheme/page-our-team.php",
+		"/home/the-cliff/web2/sms/wp-content/themes/twentyten/onecolumn-page.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/js/fancybox/jquery.easing-1.3.pack.js",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/functions.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/inc/functions.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/inc/_dummy-wall.txt",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/page-home.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/content-single.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/style.css",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/header.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/plugins/all-in-one-event-calendar.2/app/view/calendar.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/plugins/all-in-one-event-calendar.2/app/helper/class-ai1ec-settings-helper.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-includes/cron.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/inc/cal.ics.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/plugins/all-in-one-event-calendar.2/language/all-in-one-event-calendar.po",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/inc/_dummy-wall.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-includes/ms-functions.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/plugins/all-in-one-event-calendar.2/app/controller/class-ai1ec-app-controller.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/footer.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/plugins/all-in-one-event-calendar/app/helper/class-ai1ec-importer-helper.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/plugins/all-in-one-event-calendar.2/lib/helpers/SG_iCal_Freq.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/single.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/js/default.js",
+		"/home/the-cliff/Dropbox/web/cie/wp-admin/custom-background.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/page.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-admin/network/settings.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/map.php",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/js/script.js",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/plugins/all-in-one-event-calendar/lib/iCalcreator-2.10.23/iCalcreator.class.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-config.php",
+		"/home/the-cliff/Dropbox/web/cie/.htaccess",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/themes/toolbox/css/main.css",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/sunrise.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/plugins/all-in-one-event-calendar/lib/iCalcreator-2.10.23/iCalUtilityFunctions.class.php",
+		"/home/the-cliff/Dropbox/web/cie/wp-content/plugins/all-in-one-event-calendar/app/view/month.php",
+		"/home/the-cliff/Dropbox/web/powervacuum/home.htm",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/css/main.css",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/css/fonts/fonts.css",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/templates/page--login.tpl.php",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/templates/views-view.tpl.php",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/templates/views-view-fields--kontakten.tpl.php",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/templates/user_login_form.tpl.php",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/templates/block--user--login.tpl.php",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/css/meyer-reset.css",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/css/html-reset-rtl.css",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/css/README.txt",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/css/drupal7-reference.css",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/css/comments.css",
+		"/home/the-cliff/web2/dapdwc/sites/all/themes/dapdtheme/css/blocks.css",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/table/js/table.js",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/js/default.js",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/losenge/losenge.htm",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/losenge/css/main.css",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/table/css/main.css",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/style.css",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/losenge/js/losenge.js",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/losenge/js/jquery.js",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/table/css/table.css",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/table/table.htm",
+		"/home/the-cliff/web2/pflege/wp-content/themes/boilerplate/style.css",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/css/reset.css",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/table/js/fancybox/jquery.fancybox-1.3.4.js",
+		"/home/the-cliff/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/the-cliff/Dropbox/web/ad4/xml/_xml.xml",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/category.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/css/table.css",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/table.htm",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/header.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/css/main.css",
+		"/home/the-cliff/Dropbox/web/powervacuum/contact.htm",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/losenge.htm",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/js/default.js",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/static/js/table.js",
+		"/home/the-cliff/Dropbox/web/powervacuum/css/main.css",
+		"/home/the-cliff/web2/pflege/wp-config.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/single.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/loop-category.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/boilerplate/loop.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/author.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/loop-author.php",
+		"/home/the-cliff/web2/pflege/.htaccess",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/functions.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/boilerplate/category.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/images/_author-thumb2.jpg",
+		"/home/the-cliff/Desktop/astro/index.html",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/page.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/footer.php",
+		"/home/the-cliff/web2/pflege/wp-content/plugins/sem-author-image/sem-author-image.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/twentyten/loop.php",
+		"/home/the-cliff/web2/pflege/.htpasswd",
+		"/home/the-cliff/web2/pflege/wp-content/themes/boilerplate/functions.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/boilerplate/header.php",
+		"/home/the-cliff/web2/pflege/wp-content/plugins/magic-fields-2/field_types/related_type_field/related_type_field.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/boilerplate/editor-style.css",
+		"/home/the-cliff/web2/pflege/wp-content/themes/boilerplate/boilerplate-admin/admin-menu.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/boilerplate/footer.php",
+		"/home/the-cliff/web2/wheel/js/script.js",
+		"/home/the-cliff/.config/sublime-text-2/Packages/Image-Viewer/Default (Linux).sublime-keymap",
+		"/home/the-cliff/.config/sublime-text-2/Packages/User/image_viewer.sublime-settings",
+		"/home/the-cliff/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/the-cliff/web2/pflege/wp-content/themes/pflege/images/logo.png",
+		"/home/the-cliff/.config/sublime-text-2/Packages/Image-Viewer/image_viewer.sublime-settings",
+		"/home/the-cliff/.config/sublime-text-2/Packages/autocompletefile/autofilecomplete.py",
+		"/home/the-cliff/web2/pflege/wp-content/themes/boilerplate/sidebar-footer.php",
+		"/home/the-cliff/web2/pflege/wp-content/themes/boilerplate/page.php",
+		"/home/the-cliff/web2/codeb/wp-content/themes/smstheme/style.css",
+		"/home/the-cliff/web2/codeb/wp-content/themes/smstheme/js/general.js",
+		"/home/the-cliff/web2/codeb/wp-content/themes/smstheme/showcase.php",
+		"/home/the-cliff/web2/codeb/wp-content/themes/smstheme/sidebar-page.php",
+		"/home/the-cliff/web2/codeb/wp-content/themes/smstheme/functions.php"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/the-cliff/web2/sms/wp-content",
+			"/home/the-cliff/Dropbox/web/cie/",
+			"/home/the-cliff/Dropbox/web/cie/wp-content/plugins/all-in-one-event-calendar",
+			"/home/the-cliff/web2/cie,/home/the-cliff/Dropbox/web/cie/",
+			"/home/the-cliff/web2/cie",
+			"/home/the-cliff/web2/cie,/home/the-cliff/Dropbox/web/cie/wp-content",
+			"/home/the-cliff/web2/cie",
+			"/home/the-cliff/Dropbox/web/cie/wp-content",
+			"/home/the-cliff/web2/pflege/wp-content/,/home/the-cliff/Dropbox/web/cie/wp-content/themes",
+			"/home/the-cliff/web2/pflege/wp-content/",
+			"/home/the-cliff/web2/pflege/wp-content/themes/boilerplate",
+			"/home/the-cliff/web2/codeb/wp-content/themes/smstheme",
+			"/home/the-cliff/web2/codeb/",
+			"/home/the-cliff/web2/codeb/wp-content/themes/smstheme",
+			"/home/the-cliff/web2/codeb/",
+			"/home/the-cliff/web2/codeb/wp-content",
+			"/home/the-cliff/web2/codeb/",
+			"/home/the-cliff/web2/codeb/wp-content/themes/smstheme",
+			"/home/the-cliff/web2/codeb/wp-content",
+			"/home/the-cliff/web2/codeb/wp-content/themes/smstheme",
+			"/home/the-cliff/web2/ttx2/client/js,<open files>",
+			"/home/the-cliff/web2/ttx2/client/js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"meta",
+			"description",
+			"h2",
+			"ul#the_team",
+			"arrow_btn",
+			"ul.cate",
+			"categories",
+			"bcn_display",
+			"berlin",
+			"galler",
+			"455",
+			"en_",
+			"Filter:",
+			"filter:",
+			"ai1ec-label",
+			"$img",
+			"]",
+			"[",
+			"Array",
+			"]",
+			"[",
+			"area",
+			"areas",
+			"print_r",
+			"twicedaily",
+			"</li",
+			"now()",
+			"11px",
+			"fff",
+			"galler",
+			"events",
+			"));",
+			"video",
+			"bookma",
+			"dashed",
+			" {",
+			"echo",
+			"gallery",
+			"wp_get_attachment",
+			"print_r",
+			"echo",
+			"cal.ics.php",
+			"hourly",
+			" *",
+			"cron_freq",
+			"ics",
+			"hour",
+			"time",
+			"cron",
+			"calendar",
+			"calen",
+			"cron",
+			"$v",
+			"ima",
+			"echo",
+			"					$",
+			"vcal",
+			"get_fb_event",
+			"cleand",
+			"clean",
+			"echo",
+			"getarea",
+			"area",
+			"impo",
+			"48px",
+			"content",
+			"arti",
+			"sidebar",
+			"sha",
+			"form",
+			"requi",
+			"require",
+			"parse_ics_feed",
+			"ics",
+			"neu",
+			"ai1ec-event-title",
+			"foreach",
+			"echo",
+			"print_",
+			"’",
+			"‘",
+			"div.node-kontakt",
+			"relative",
+			"images",
+			"content",
+			"search",
+			"images",
+			"form-te",
+			"sys",
+			"form",
+			"16px",
+			"DXImageTransform",
+			"rechtsanwalt.trautmann-berlin@t-online.de",
+			" nav",
+			"_box nav",
+			"nav li",
+			"html.",
+			"ltie",
+			"lt",
+			"ie8",
+			"ltie8",
+			".ltie8",
+			"filter",
+			"contact",
+			"<a href=\"#contact\" class=\"btn contact\">",
+			"<a href=\"#\" class=\"btn contact\">",
+			"contact",
+			"type2",
+			"a.btn",
+			"<a href=\"#\" class=\"btn\">Antrag",
+			"\"col\"><h2></span>",
+			"scope=\"col\"><span>",
+			"scopr=\"col\">",
+			"class=\"com",
+			".tab",
+			"box-sh",
+			"shadow",
+			"li.on",
+			"li.on a",
+			"e1e1e1",
+			"d2d1d1",
+			"e7e7e7",
+			"f4f4f4",
+			"class=\"info\"",
+			"6b6c70",
+			"tab",
+			"losen",
+			"landing"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ul.dotted",
+			"",
+			"array",
+			"\"",
+			"'",
+			"div.node",
+			"_box .nav",
+			"li",
+			"<a href=\"#contact\" class=\"btn contact\" title=\"\">",
+			"<a href=\"#contact\" class=\"btn contact\">",
+			"contact",
+			"<a href=\"#\" class=\"btn type2\">Antrag",
+			"\"col\"><h2><span>",
+			"scope=\"col\"><h2></span>",
+			"scope=\"col\"><span>",
+			"class=\"com upper",
+			"8a8c93",
+			"afb1ba",
+			"8a8c93",
+			"afb1ba",
+			"class=\"tooltip\"",
+			"/ico-com-",
+			"ico-com-",
+			"",
+			"$tabbed_boxes",
+			"rounded_box",
+			"********************",
+			"",
+			"EL.curMarquee",
+			"placeAtLastChar",
+			"EDIT.charArr.pop(",
+			"EDIT.charArr.push(",
+			"EDIT.getEditableArea(",
+			"pushCharData:",
+			"pushCharData(",
+			"lastTextCell",
+			"charArr",
+			"CELL.getTDAttrs(",
+			"CELL.getCellsRange(",
+			"CELL.getCell(",
+			"CELL.getPos(",
+			"EL.tdSel",
+			"EL"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/the-cliff/mchat_www.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true
+}
