@@ -13,7 +13,15 @@ $facebook = doFacebook();
 $wallId = '184196778359304';
 $wall = getWall($wallId);
 $json = json_encode($wall);
-//echo '<pre>'.$json.'</pre>';
+
+//print_r($wall);
+$file = "all-json.php";
+
+$f = fopen($file, 'w');
+
+fwrite($f, $json);
+
+fclose($f);
 
 
 
@@ -36,16 +44,19 @@ foreach($areas as $a) {
 
 	$area = $a[2];
 
-	foreach ($wall as $i) {
-
-		foreach($i as $j) {
+	foreach ($wall["data"] as $i) {
 
 
-			if(isset($j["link"])) {
+		//foreach($i as $j) {
+
+			if(isset($i["attachment"])) if(isset($i["attachment"]["media"][0])) if(isset($i["attachment"]["media"][0]["href"])) {
 
 				//pick out only posts that have links
 
-				$l = strtolower($j["link"]);
+				echo $i["attachment"]["media"][0]["href"];
+
+				$l = strtolower($i["attachment"]["media"][0]["href"]);
+				echo $l;
 				$pos = strrpos($l, "facebook.com/events/");
 				$id = substr($l, 31, (strlen($l)-32));
 				//substr(string, start)
@@ -59,7 +70,6 @@ foreach($areas as $a) {
 					print_r($e);
 					echo '<br><br>'; 
 					$img = get_fb_image($id, "large");
-					//echo $img."sss";
 					//echo $e["name"]."\n".$e["start_time"]."\n".$e["timezone"]."\n\n";
 					$v = get_fb_venue($e);
 
@@ -100,6 +110,7 @@ foreach($areas as $a) {
 							$desc = "<a href='https://www.facebook.com/events/".$id."' class='uibutton confirm'>Event on Facebook</a><br><br>";
 							if(strlen($img)>0) $desc .= '<img src="'.$img.'" alt="" class="img" />';
 							$desc .= auto_link_text($e["description"]);
+							$desc .= '<!-- owner: '.$e["owner"]["id"].' venue: '.$e["venue"]["id"].' -->'; 
 							
 							array_push($vcal,"DESCRIPTION:".$desc);
 						}
@@ -116,7 +127,7 @@ foreach($areas as $a) {
 			}
 
 
-		}
+		//}
 	}
 
 	array_push($vcal,"END:VCALENDAR");
@@ -130,6 +141,7 @@ foreach($areas as $a) {
 	}
 
 	fclose($f);
+
 }
 
 

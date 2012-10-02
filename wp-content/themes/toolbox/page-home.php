@@ -82,7 +82,7 @@ get_header(); ?>
 
                     <h2>Latest blog posts <a href="/blog">All posts</a></h2>
 
-                    <?php latest_posts(true,4); ?>
+                    <?php latest_posts(true); ?>
 
                 </div><!-- /#posts -->
 

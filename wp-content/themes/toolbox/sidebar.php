@@ -11,8 +11,7 @@
 		<div id="secondary" class="widget-area" role="complementary">
 
 <?php
-	if(comments_open() && !is_page()) {
-		echo is_post_type_archive();
+	if(comments_open() && !is_page() && (get_post_type() != 'performers') && (get_post_type() != 'venue') && (get_post_type() != 'organisations')) {
 ?>
 	<aside id="archives">
 		<h2>Latest posts</h2>

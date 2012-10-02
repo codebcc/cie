@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors','On');
+error_reporting(E_ERROR);
 date_default_timezone_set('Europe/Berlin');
 /**
  * Toolbox functions and definitions
@@ -411,7 +413,7 @@ function event_list($amount = 0, $schedule = false, $filter = false, $ids = fals
     if($ids) {
     	$idsFlat = "";
     	for($a=0; $a<=count($ids); $a++) {
-    		$idsFlat .= $ids[$a]->ID;
+    		$idsFlat .= $ids[$a]["gig"];
     		if($a < count($ids)-1) $idsFlat .= ",";
     	}
     	$myrows = $wpdb->get_results( "SELECT * FROM  wp_ai1ec_events WHERE DATE(start) >= DATE(NOW()) AND post_id IN (".$idsFlat.") ORDER BY DATE(start)");
@@ -586,9 +588,9 @@ function get_post_list($posts) {
 	echo $h;
 }
 
-function latest_posts($summary = false, $amount=-1) {
+function latest_posts($summary = false) {
 	echo '<ul class="latest_posts">'; 
-	$recent_posts = wp_get_recent_posts(array('post_status' => 'publish', 'numberposts' => $amount));
+	$recent_posts = wp_get_recent_posts(array('post_status' => 'publish'));
 	foreach( $recent_posts as $i => $recent ){
 		//print_r($recent);
 		$author = get_userdata($recent["post_author"]);
@@ -629,5 +631,7 @@ function external_posts() {
 
 	echo '</ul>';
 }
+
+register_field('event_listing', dirname(__FILE__) . '/acf_event_list.php'); 
   
 

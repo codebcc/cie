@@ -21,6 +21,27 @@
 		return $(this).length>0;
 	};
 	
+	
+	/*
+	*  Vars
+	*
+	*  @description: 
+	*  @created: 3/09/12
+	*/
+	
+	acf.data = {
+		action 			:	'get_input_metabox_ids',
+		post_id			:	0,
+		page_template	:	false,
+		page_parent		:	false,
+		page_type		:	false,
+		page			:	0,
+		post			:	0,
+		post_category	:	false,
+		post_format		:	false,
+		taxonomy		:	false
+	};
+	
 		
 	/*
 	*  Document Ready
@@ -30,51 +51,26 @@
 	*/
 	
 	$(document).ready(function(){
-	
-		// show metaboxes for this post
-		acf.data = {
-			action 			:	'get_input_metabox_ids',
-			post_id			:	acf.post_id,
-			page_template	:	false,
-			page_parent		:	false,
-			page_type		:	false,
-			page			:	acf.post_id,
-			post			:	acf.post_id,
-			post_category	:	false,
-			post_format		:	false,
-			taxonomy		:	false
-		};
 		
 		
-		// add classes
-		$('#poststuff .postbox[id*="acf_"]').addClass('acf_postbox');
-		$('#adv-settings label[for*="acf_"]').addClass('acf_hide_label');
+		// update post_id
+		acf.data.post_id = acf.post_id;
+		acf.data.page = acf.post_id;
+		acf.data.post = acf.post_id;
 		
-		// hide acf stuff
-		$('#poststuff .acf_postbox').hide();
-		$('#adv-settings .acf_hide_label').hide();
 		
-		// loop through acf metaboxes
-		$('#poststuff .postbox.acf_postbox').each(function(){
+		// MPML
+		if( $('#icl-als-first').exists() )
+		{
+			var href = $('#icl-als-first').children('a').attr('href'),
+				regex = new RegExp( "lang=([^&#]*)" ),
+				results = regex.exec( href );
 			
-			// vars
-			var options = $(this).find('.inside > .options');
-			var show = options.attr('data-show');
-			var layout = options.attr('data-layout');
-			var id = $(this).attr('id').replace('acf_', '');
+			// lang
+			acf.data.lang = results[1];
 			
-			// layout
-			$(this).addClass('acf_postbox').addClass(layout);
-			
-			// show / hide
-			if(show == 'true')
-			{
-				$(this).show();
-				$('#adv-settings .acf_hide_label[for="acf_' + id + '-hide"]').show();
-			}
-			
-		});
-	
+		}
+		
 	});
 	
 	
@@ -87,6 +83,7 @@
 	
 	function update_fields()
 	{
+
 		$.ajax({
 			url: ajaxurl,
 			data: acf.data,
@@ -98,10 +95,46 @@
 				$('#poststuff .acf_postbox').hide();
 				$('#adv-settings .acf_hide_label').hide();
 				
+				
+				// dont bother loading style or html for inputs
+				if(result.length == 0)
+				{
+					return false;
+				}
+				
+				
 				// show the new postboxes
 				$.each(result, function(k, v) {
-					$('#poststuff #acf_' + v).show();
+					
+					
+					var postbox = $('#poststuff #acf_' + v);
+					postbox.show();
 					$('#adv-settings .acf_hide_label[for="acf_' + v + '-hide"]').show();
+					
+					// load fields if needed
+					postbox.find('.acf-replace-with-fields').each(function(){
+						
+						var div = $(this);
+						
+						$.ajax({
+							url: ajaxurl,
+							data: {
+								action : 'acf_input',
+								acf_id : v,
+								post_id : acf.post_id
+							},
+							type: 'post',
+							dataType: 'html',
+							success: function(html){
+							
+								div.replaceWith(html);
+								
+								$(document).trigger('acf/setup_fields', postbox);
+								
+							}
+						});
+						
+					});
 				});
 				
 				// load style
@@ -141,35 +174,25 @@
 	
 	$('#parent_id').live('change', function(){
 		
-		var page_parent = $(this).val();
+		var val = $(this).val();
 		
-		if($(this).val() != "")
+		
+		// set page_type / page_parent
+		if( val != "" )
 		{
 			acf.data.page_type = 'child';
+			acf.data.page_parent = val;
 		}
 		else
 		{
 			acf.data.page_type = 'parent';
+			acf.data.page_parent = false;
 		}
 		
 		update_fields();
 	    
 	});
-	
-	$('#categorychecklist input[type="checkbox"]').live('change', function(){
-		
-		acf.data.post_category = ['0'];
-		
-		$('#categorychecklist :checked').each(function(){
-			acf.data.post_category.push($(this).val())
-		});
-		
-		//console.log(data.post_category);
-				
-		update_fields();
-		
-	});	
-	
+
 	
 	$('#post-formats-select input[type="radio"]').live('change', function(){
 		
@@ -178,14 +201,23 @@
 		
 	});	
 	
-	// taxonomy
-	$('div[id*="taxonomy-"] input[type="checkbox"]').live('change', function(){
+	
+	// taxonomy / category
+	$('.categorychecklist input[type="checkbox"]').live('change', function(){
 		
-		acf.data.taxonomy = ['0'];
 		
-		$(this).closest('ul').find('input[type="checkbox"]:checked').each(function(){
-			acf.data.taxonomy.push($(this).val())
+		// vars
+		var values = ['0'];
+		
+		
+		$('.categorychecklist input[type="checkbox"]:checked').each(function(){
+			values.push($(this).val());
 		});
+
+		
+		acf.data.post_category = values;
+		acf.data.taxonomy = values;
+
 
 		update_fields();
 		

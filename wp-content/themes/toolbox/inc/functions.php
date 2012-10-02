@@ -13,12 +13,18 @@ function doFacebook() {
 function getWall($id) {
 	global $facebook;
 	$access_token = $facebook->getAccessToken();
-	return $facebook->api('/'.$id.'/feed?access_token=".$access_token','GET');
+	//return $facebook->api('/'.$id.'/feed?access_token=".$access_token','GET');
+	//'select post_id from stream where source_id = 40796308305 and created_time <'.time().' LIMIT 1000000 ;'
+	$fql='/fql?q=SELECT+post_id,message,attachment+FROM+stream+WHERE+source_id='.$id.'+LIMIT+100000&access_token='.$access_token;
+	return $facebook->api($fql,'GET');
+	//echo $fql;
+
 }
 
 function getPageId($id) {
 	global $facebook;
-	$fb = $facebook->api('/'.$id.'/','GET');	
+	$access_token = $facebook->getAccessToken();
+	$fb = $facebook->api('/'.$id.'/?access_token='.$access_token,'GET');	
 	return $fb["id"];
 }
 
@@ -179,10 +185,10 @@ function get_fb_event($id) {
 	return $e;
 }
 
-function get_fb_image($id, $size) {
-	$headers = get_headers('https://graph.facebook.com/'.$id.'/picture?type=normal',1);
+function get_fb_image($id, $size = "normal") {
+	$headers = get_headers('http://graph.facebook.com/'.$id.'/picture?type=normal',1);
 	$l = $headers["Location"];
-	return  (strpos($l,"jpg")>0) ? $l : "";
+	return str_replace("_s.jpg", "_n.jpg", $l);
 }
 
 function make_content($content) {
@@ -251,6 +257,104 @@ function safe_unserialize($serialized) {
         }
     }
     return false;
+}
+
+function getHref($href) {
+	return (strpos($href, "http") > -1) ? $href : "http://".$href;
+}
+
+function getMapLink($loc, $name) {
+	$street = $loc["street"];
+	$city = $loc["city"];
+	$country = $loc["country"];
+	return "http://maps.google.de?q=".$name."+".$street."+".$city."+".$city."+".$country;
+
+
+}
+
+function getAddress($loc) {
+	$t = "";
+	$street = $loc["street"];
+	$city = $loc["city"];
+	if($street) $t.=$street.", ";
+	if($city) $t.=$city;
+	return $t;
+}
+
+function getMapHTML($loc,$name) {
+	if(!$loc["street"]) return false;
+	return '<p class="map">Map: <a href="'.getMapLink($loc,$name).'">'.getAddress($loc).'</a></p>';
+}
+
+function getProducersEvents($id) {
+
+	global $wpdb;
+	global $post;
+
+	$wall = getWallVar();
+
+	print_r($wall);
+
+	$id = getPageId($id);
+
+	echo $id.'<br><br>';
+
+	foreach ($wall->data as $e) {
+		echo $e->from->id."<br>";
+		if($e->from->id==$id) print_r($e);
+	}
+
+}
+
+function getAssociatedProducers($id) {
+
+    global $wpdb;
+    global $post;
+
+    $ids = $id.",";
+
+    $myrows = $wpdb->get_results( "SELECT * FROM  wp_posts WHERE post_type = 'performers'");
+    foreach ($myrows as $row) {
+    	 $orgs = get_field("organisation_links", $row->ID);
+    	 if($orgs) {
+	    	 foreach ($orgs as $o) {
+	    	 	if( (strpos($o["association"], "Produces")>-1) &&($o["organisation"]->ID==$post->ID) ) {
+	    	 		 $fbID = get_field("facebook_id", $row->ID);
+	    	 		 if(!$fbID) continue;
+	    	 		 if(!is_numeric($fbID)) {
+	    	 		 	$fbID = getPageId($fbID);
+	    	 		 	$ids .= $fbID.",";
+	    	 		 } else {
+	    	 		 	$ids .= $fbID.",";
+	    	 		 }
+	    	 	}
+	    	 }
+    	}
+    	 
+    }
+    
+	return $ids;
+}
+
+function getProducedGigs($id) {
+
+    $wall = getWallVar();
+
+    foreach ($wall->data as $w) {
+    
+    	echo ($w->from->id).",";
+    }
+
+}
+
+function getWallVar() {
+	$file =  $_SERVER['DOCUMENT_ROOT']."/wp-content/themes/toolbox/inc/all-json.php";
+	$var = $homepage = file_get_contents($file);
+	return json_decode($var);	
+}
+
+function fbButton($id) {
+	echo '<a href="http://www.facebook.com/'.$id.'" class="uibutton confirm">See Facebook page</a>';
 }
 
 ?>

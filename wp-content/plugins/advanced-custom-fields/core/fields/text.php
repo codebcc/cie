@@ -51,10 +51,14 @@ class acf_Text extends acf_Field
 	
 	function create_options($key, $field)
 	{
-		// defaults
-		$field['default_value'] = isset($field['default_value']) ? $field['default_value'] : '';
-		$field['formatting'] = isset($field['formatting']) ? $field['formatting'] : 'html';
+		// vars
+		$defaults = array(
+			'default_value'	=>	'',
+			'formatting' 	=>	'html',
+		);
 		
+		$field = array_merge($defaults, $field);
+
 		?>
 		<tr class="field_option field_option_<?php echo $this->name; ?>">
 			<td class="label">
@@ -82,8 +86,8 @@ class acf_Text extends acf_Field
 					'name'	=>	'fields['.$key.'][formatting]',
 					'value'	=>	$field['formatting'],
 					'choices' => array(
-						'none'	=>	'None',
-						'html'	=>	'HTML'
+						'none'	=>	__("None",'acf'),
+						'html'	=>	__("HTML",'acf')
 					)
 				));
 				?>
