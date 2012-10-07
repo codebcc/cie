@@ -1,23 +1,6 @@
 BEGIN:VCALENDAR
 VERSION:1.0
 BEGIN:VEVENT
-DTSTART;TZID=Europe/Berlin:20121003T203000
-DTEND;TZID=Europe/Berlin:20121003T233000
-SUMMARY:Gentrify This! - Tag der Deutschen Einheit?!?
-LOCATION:<a href="http://maps.google.de/maps?q=Grünthaler Str. 9, 13357 Berlin-Wedding,+,+,+,+">MAP</a>
-DESCRIPTION:<a href='https://www.facebook.com/events/382541141818525' class='uibutton confirm'>Event on Facebook</a><br><br><img src="http://profile.ak.fbcdn.net/hprofile-ak-snc6/187777_382541141818525_1951214437_n.jpg" alt="" class="img" />Offene Bühne im Gesundbrunnen Kiez. Musiker, Poeten, und Performer probieren ihr Material im Wedding aus. Alle die das Publikum begeistern (d.h. sich auf die Buhne trauen), bekommt den Ruhm und die Publikumsspenden. égalité herrscht.
-
-Moderation: Summer Banks, Journalistin/Performerin, die zu viel Zeit im Lidl in der Badstraße verbringt.
-
---
-
-Open Mic in Gesundbrunnen for all performers and musicians. New 
-acts encouraged, we'll give you a supportive, cozy atmosphere. Donations collected by hat, and money divided equally among perfomers. Screw neo-liberalism.
-
-Hosted by journalist/comedian Summer Banks, force of gentrification since listed in Lonely Planet's Berlin city guide as "inimitable"<!-- owner: 324818334248621 venue:  -->
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;TZID=Europe/Berlin:20121002T203000
 DTEND;TZID=Europe/Berlin:20121002T233000
 SUMMARY:English Comedy Night

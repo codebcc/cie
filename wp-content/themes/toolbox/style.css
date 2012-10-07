@@ -131,6 +131,7 @@ body.page-template-full-width-page-php #primary {
 	position: relative;
 }
 #main {
+	clear: left;
 	overflow: hidden;
 }
 #main .widget-area {

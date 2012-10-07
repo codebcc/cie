@@ -23,6 +23,8 @@ fwrite($f, $json);
 
 fclose($f);
 
+$eventsPHP = '{"data":[';
+
 
 
 $areas = array(
@@ -68,6 +70,7 @@ foreach($areas as $a) {
 					$e = get_fb_event($id);
 					if(!$e["timezone"]) $e["timezone"] = "Europe/Berlin";
 					print_r($e);
+					$eventsPHP .= json_encode($e).",";
 					echo '<br><br>'; 
 					$img = get_fb_image($id, "large");
 					//echo $e["name"]."\n".$e["start_time"]."\n".$e["timezone"]."\n\n";
@@ -132,6 +135,8 @@ foreach($areas as $a) {
 
 	array_push($vcal,"END:VCALENDAR");
 
+	fclose($f);
+
 	$file = 'cal-'.$a[3].".ics";
 
 	$f = fopen($file, 'w');
@@ -139,6 +144,14 @@ foreach($areas as $a) {
 	foreach($vcal as $i ) {
 		fwrite($f, $i."\r\n");
 	}
+
+	fclose($f);
+
+	$eventsPHP .= ']}';
+
+	$f = fopen("all-events.php", 'w');
+
+	fwrite($f, $eventsPHP);
 
 	fclose($f);
 

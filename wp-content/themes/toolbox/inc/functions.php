@@ -349,12 +349,35 @@ function getProducedGigs($id) {
 
 function getWallVar() {
 	$file =  $_SERVER['DOCUMENT_ROOT']."/wp-content/themes/toolbox/inc/all-json.php";
-	$var = $homepage = file_get_contents($file);
+	$var = file_get_contents($file);
 	return json_decode($var);	
+}
+
+function getEventsVar() {
+	$file =  $_SERVER['DOCUMENT_ROOT']."/wp-content/themes/toolbox/inc/all-events.php";
+	$var = file_get_contents($file);
+	json_decode($var);	
+	echo json_last_error();
 }
 
 function fbButton($id) {
 	echo '<a href="http://www.facebook.com/'.$id.'" class="uibutton confirm">See Facebook page</a>';
+}
+
+function get_directory($type) {
+
+    global $wpdb;
+
+	$h = '<ul class="directory">';
+
+
+    $myrows = $wpdb->get_results( "SELECT * FROM  wp_posts WHERE post_type = '".$type."' AND post_status = 'publish' ORDER BY post_title");
+    foreach ($myrows as $row) {
+    	$h .= '<li><a href="'.$row->guid.'">'.$row->post_title.'</a></li>';
+    }
+    $h .= '</ul>';
+    echo $h;
+
 }
 
 ?>

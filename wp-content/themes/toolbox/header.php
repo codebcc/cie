@@ -23,6 +23,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
+
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -58,12 +59,19 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.cycle.lite.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jQuery.tubeplayer.min.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/default.js" type="text/javascript"></script>
 
 <?php 
 require_once("inc/functions.php");
 wp_head(); ?>
+
+<meta name="description" content="Your one-stop shop for English language comedy listing in Berlin" />
+<link rel="image_src" href="http://comedyinenglish.de/wp-content/themes/toolbox/images/cie_badge.jpg" /> 
+
+<meta property="og:description" content="Your one-stop shop for English language comedy listing in Berlin"/>
+<meta property="og:image" content="http://comedyinenglish.de/wp-content/themes/toolbox/images/cie_badge.jpg"/>
 </head>
 
 <body <?php body_class(); ?>>

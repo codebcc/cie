@@ -72,7 +72,7 @@ echo '<h1>'.$name.'</h1>';
 if($content_before) echo '<div id="content_before">'.$content_before.'</div>';
 if($fbID && !$nopull) {
 	if($cover) echo '<div id="image_text">';
-	if($cover) if($cover["source"]) echo '<img src="'.$cover["source"].'" class="cover" width="300" alt=""/>';
+	if($cover) if($cover["source"]) echo '<a href="'.$cover["source"].'" class="fancybox"><img src="'.$cover["source"].'" class="cover" width="150" alt=""/></a>';
 	echo '<div id="small_details">';
 	if($website) echo '<p>Website: <a href="'.getHref($website).'">'.$website.'</a></p>'; 
 	echo '<a href="'.$link.'" class="uibutton confirm">See Facebook page</a>';

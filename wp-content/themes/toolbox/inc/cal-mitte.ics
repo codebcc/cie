@@ -1,6 +1,19 @@
 BEGIN:VCALENDAR
 VERSION:1.0
 BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20121009T200000
+DTEND;TZID=Europe/Berlin:20121009T230000
+SUMMARY:ComedySportz Prime Time Show! (at the Kook)
+LOCATION: <a href="http://www.facebook.com/CSzBerlin">ComedySportz Berlin</a> <a href="http://maps.google.de/maps?q=52.529741,+13.409968(ComedySportz Berlin)">MAP</a>
+DESCRIPTION:<a href='https://www.facebook.com/events/458780784166270' class='uibutton confirm'>Event on Facebook</a><br><br><img src="http://profile.ak.fbcdn.net/hprofile-ak-ash4/372910_458780784166270_1088635830_n.jpg" alt="" class="img" />Catch us at the Comedyclub Kookaburra for our regular Tuesday night prime time improvised comedy show! Full length, bare-knuckled brawls, on stage, for your laughs (in English).
+
+Tickets at the door. 10/8€
+
+Doors open at 8:00pm 
+SHOW STARTS AT 8:30<!-- owner: 177122732313880 venue: 177122732313880 -->
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;TZID=Europe/Berlin:20121006T233000
 DTEND;TZID=Europe/Berlin:20121007T023000
 SUMMARY:The Mother Fuckin David Deery Show LIVE at the Kookaburra.
@@ -23,6 +36,23 @@ Come see what all the fuss is about.
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20121003T203000
+DTEND;TZID=Europe/Berlin:20121003T233000
+SUMMARY:Gentrify This! - Tag der Deutschen Einheit?!?
+LOCATION: <a href="http://www.facebook.com/pages/Fos-Bar/200030943369914">Fos Bar</a> <a href="http://maps.google.de/maps?q=52.551885776637,+13.386325366596(Fos Bar)">MAP</a>
+DESCRIPTION:<a href='https://www.facebook.com/events/382541141818525' class='uibutton confirm'>Event on Facebook</a><br><br><img src="http://profile.ak.fbcdn.net/hprofile-ak-snc6/187777_382541141818525_1951214437_n.jpg" alt="" class="img" />Offene Bühne im Gesundbrunnen Kiez. Musiker, Poeten, und Performer probieren ihr Material im Wedding aus. Alle die das Publikum begeistern (d.h. sich auf die Buhne trauen), bekommt den Ruhm und die Publikumsspenden. égalité herrscht.
+
+Moderation: Summer Banks, Journalistin/Performerin, die zu viel Zeit im Lidl in der Badstraße verbringt.
+
+--
+
+Open Mic in Gesundbrunnen for all performers and musicians. New 
+acts encouraged, we'll give you a supportive, cozy atmosphere. Donations collected by hat, and money divided equally among perfomers. Screw neo-liberalism.
+
+Hosted by journalist/comedian Summer Banks, force of gentrification since listed in Lonely Planet's Berlin city guide as "inimitable"<!-- owner: 324818334248621 venue: 200030943369914 -->
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;TZID=Europe/Berlin:20121012T210000
 DTEND;TZID=Europe/Berlin:20121013T001500
 SUMMARY:Papa and Mama night out. The Craic Den Comedy Road Show.
@@ -31,9 +61,11 @@ DESCRIPTION:<a href='https://www.facebook.com/events/474235119277601' class='uib
                        It's Papa and Mama night out..! 
             Right in the heart of Mitte Oslo Kaffebar.  
 It's The Craic Den first move and it's into a area were Mummies and Daddies don't get much fun. It''s all work and no play
-We have a wonderful show lined up for you all to brighten your     evening in Mitte. 
+We have a wonderful show lined up for you all to brighten your     evening in Mitte.    The entrance fee is 5 Euro
 
-     Our host for The Craic Den Comedy show will be, 
+
+
+      Our host for The Craic Den Comedy show will be, 
  
                       Passun Ernesto Azhand
             
@@ -47,13 +79,15 @@ We have a wonderful show lined up for you all to brighten your     evening in Mi
 
                             Paul Salamone
 
+It's not far away.Oslo Kaffebar. And it only around the corner the 12 October.!. You won't be disappointed. It's a show for those Papa's Mama's who need a break like, climb a mountain or jump in a lake. Or even go to The Craic Den and Listen to Drew Portnoy talk about what its like being a Father.. Or Tamika Campbell talking about being a Mother. Or Passun Ernesto Azhand talking about how hard it is to be German. Or Paul Salamone talking about being the God Father of comedy. Or Anne Kraft talking about how to find the right love mate..! And Marcel Mohab who just talks to himself. These are all great stars of comedy and they are performing on the 12 October in Oslo kaffee Bar. The Craic Den Comedy Road Show needs the support of all those out there who like to just have fun..!
+
 
 
                
 
                        
 
-                     The entrance fee is 5 Euro<!-- owner: 667209368 venue: 391694090872640 -->
+              <!-- owner: 667209368 venue: 391694090872640 -->
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
@@ -113,10 +147,42 @@ And with the exceptional participation of Neil Numb.<!-- owner: 100000796543677 
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=Europe/Berlin:20121018T040000
-DTEND;TZID=Europe/Berlin:20121019T040000
+DTSTART;TZID=Europe/Berlin:20121018T213000
+DTEND;TZID=Europe/Berlin:20121019T003000
 SUMMARY:The Fish Bowl - Episode Five
 LOCATION: <a href="http://www.facebook.com/thefishbowlberlin">The Fish Bowl</a> <a href="http://maps.google.de/maps?q=52.521646,+13.423084(The Fish Bowl)">MAP</a>
+DESCRIPTION:<a href='https://www.facebook.com/events/342675085826798' class='uibutton confirm'>Event on Facebook</a><br><br><img src="http://profile.ak.fbcdn.net/hprofile-ak-snc6/277090_342675085826798_1645211864_n.jpg" alt="" class="img" />The Fish Bowl is held every second Thursday at Naherholung Sternchen(<a rel="nowfollow" href="http://www.naherholung-sternchen.de/">naherholung-sternchen.de/</a>). Episode Five promises to be yet another huge success, with performers from France, Australia, England, Austria, Germany and of course, Scotland, taking to the stage to entertain a full house of loyal Fish Bowl patrons..
+
+Each event features a new line-up of 2-3 live music acts, 4-5 English-Language comedians and an after-party, including visual projections, hosted by one our resident DJ's. 
+
+The stage is run by musician and Buzz Club co- founder, Chris Glen (<a rel="nowfollow" href="www.facebook.com/buzzclubberlin">facebook.com/&hellip;</a>) and comedian, Neil Numb, who bring the best of what's happening on comedy and music stages around the city, to a grander arena.
+
+This weeks The Fish Bowl will feature:
+
+Live music from:
+Beranger Gras
+Ray Mann
+Chris Glen
+
+Comedy from:
+Caroline Clifford
+Georg Kammerer
+Passun Azhand
+Marcel Mohab
+Dharmander Singh
+Neil Numb
+
+A DJ after-party hosted by:
+BB Rex
+
+Since launching in August, The Fish Bowl has quickly built a reputation for the high quality of the performers featured and its unique and vibrant atmosphere, which together, make it an event unlike any other in Berlin. 
+
+We look forward to seeing you there!
+
+Please head to our page for links to upcoming and past acts at: <a rel="nowfollow" href="www.thefishbowl.de">thefishbowl.de</a>
+
+You can also find listings for all English comedy events in Berlin at: <a rel="nowfollow" href="www.comedyinenglish.de">comedyinenglish.de</a>.
+<!-- owner: 459031607455471 venue: 459031607455471 -->
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
