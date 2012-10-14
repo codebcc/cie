@@ -1,0 +1,320 @@
+//********** CIE
+ 
+#home-banner {
+	background: #a3569c;
+	margin-bottom: 20px;
+	.inner {
+		background: url(../img/cie-banner-01.png) no-repeat left bottom;
+		height: 100px;
+	}
+}
+
+.access {
+	left: -9999px;
+	position: absolute;
+}
+
+.event-list {
+	//height: 200px;
+	//overflow: auto;
+}
+
+.event-list .date {
+	display: block;
+}
+
+.event-list li {
+	padding-bottom: 5px;
+}
+
+.well h2 .more {
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#videos {
+	position: relative;
+	height: 482px;
+}
+
+#videos.large {
+	height: 686px;	
+}
+
+#videos li {
+	float: left;
+	list-style: none;
+	position: relative;
+	text-align: center;
+	width: 134px;
+}
+
+#videos li:first-child {
+	text-align: left;
+}
+
+#videos li:last-child {
+	text-align: right;
+}
+
+#videos ul {
+
+}
+
+#videos .jcarousel-clip, #videos ul,
+#videos .carousel-nav, #videos .jcarousel-container {
+	height: 98px !important;
+}
+
+#videos .jcarousel-clip {
+	padding: 0;
+	left: 27px !important;
+	position: absolute !important;
+	bottom: 0 !important;
+	overflow: hidden;
+	width: 395px;
+}
+
+#videos.large .jcarousel-clip {
+	width: 634px;
+}
+
+#videos .carousel-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #CCC;
+	cursor: pointer;
+	width: 20px;
+}
+
+#videos .carousel-nav span {
+	font-weight: bold;
+	font-size: 26px;
+	padding: 30px 0 0 2px;
+	display: block;
+}
+
+#videos #carousel-next {
+	left: auto;
+	right: 0;
+}
+
+#videos li img {
+	position: absolute;
+	left: 7px;
+	top: 0;
+	z-index: 10;
+}
+
+#videos li a,
+#videos li span {
+	display: block;
+	position: relative;
+	width: 120px;
+	z-index: 20;
+}
+
+#videos li a {
+	height: 93px;
+}
+
+#videos li a span {
+	text-decoration: none;
+	border-bottom: 1px dotted #CCC;
+	display: block;
+	font: bold 10px arial;
+	color: #fff;
+	background: black;
+	bottom: -6px;
+	left: 7px;
+	position: absolute;
+	text-align: left;
+	text-indent: 5px;
+}
+
+#videos li:first-child a {
+	left: 0;
+}
+
+#videos li:last-child a {
+	left: auto;
+	right: 0;
+}
+
+#legend {
+	padding-bottom: 15px;
+}
+
+#legend span {
+	color: #fff;
+	display: inline-block;
+	font-weight: normal;
+	padding: 0 5px;
+}
+
+#legend span.neukolln {
+	background: #22bb00;
+}
+
+#legend span.mitte {
+	background: #dd9900;
+}
+
+#legend span.kreuzberg {
+	background: #60A;
+}
+
+#legend span.unspecified {
+	background: #aaa;
+}
+
+.ai1ec-month-view .ai1ec-event, .ai1ec-week-view .ai1ec-event {
+	white-space: normal !important;
+}
+
+.ai1ec-event-popup-bg,
+.ai1ec-filters-container {
+	display: none !important;
+}
+
+.ai1ec-month-view .ai1ec-event-summary, .ai1ec-week-view .ai1ec-event-summary {
+	right: 0 !important;
+}
+
+.ai1ec_event .img {
+	float: left;
+	margin-right: 15px;
+}
+
+.ai1ec_event .confirm {
+	margin-bottom: 15px;
+}
+
+
+.ai1ec-event-footer {
+	display: none;
+}
+
+ul.ai1ec-pagination {
+	margin-bottom: 20px !important;
+}
+
+#ai1ec-calendar-view-container {
+	padding-bottom: 20px;
+}
+
+#footer {
+	padding-top: 10px;
+	margin-bottom: 0;
+	a {
+		color: #999;
+	}
+	.navbar-inner {
+		padding-top: 10px;
+	}
+}
+
+img.img {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.single-ai1ec_event #comments {
+	display: none;
+}
+
+li.today a {
+	color: @green; 
+	font-weight: bold;
+}
+
+li.today a span.today {
+	color: #000;
+	display: inline-block;
+	text-decoration: none;
+}
+
+//********** BOOTSTRAP OVERRIDES
+
+@media (max-width: 979px) {
+	#home-banner {
+		margin-top: -20px;
+	}
+}
+
+.navbar-relative-top .container {
+	width: 940px;
+}
+
+@media (min-width: 1200px) {
+	.navbar-relative-top .container {
+		width: 1170px;
+	}	
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+	.navbar-relative-top .container {
+		width: 724px;
+	}	
+}
+
+@media (min-width: 768px) {
+	.navbar .btn-navbar {
+		margin-right: 0;
+	}	
+}
+
+@media (max-width: 767px) {
+	.navbar-relative-top .container {
+		width: auto;
+	}
+	.navbar .btn-navbar {
+		margin-right: 10px;
+	}	
+}
+
+
+
+
+.breadcrumb {
+	margin-top: -20px;
+}
+
+.pull-left {
+	float: left;
+}
+
+.navbar + .row .container {
+	padding: 0;
+}
+
+.well {
+	padding: 15px 19px;
+}
+
+.well h2 {
+	font-size: 18px;
+	line-height: 18px;
+	margin: 0 0 10px;	
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (min-width: 980px) {
+
+}

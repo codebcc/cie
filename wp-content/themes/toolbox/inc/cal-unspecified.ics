@@ -1,6 +1,34 @@
 BEGIN:VCALENDAR
 VERSION:1.0
 BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20121016T203000
+DTEND;TZID=Europe/Berlin:20121016T233000
+SUMMARY:We are not Gemüsed 8 - Comedy open stage
+LOCATION:<a href="http://maps.google.de/maps?q=Berlin, Germany,+,+,+,+">MAP</a>
+DESCRIPTION:<a href='https://www.facebook.com/events/389625721108390' class='uibutton confirm'>Event on Facebook</a><br><br><img src="http://profile.ak.fbcdn.net/hprofile-ak-snc6/276870_389625721108390_42470733_n.jpg" alt="" class="img" />The brand new weekly open stage for English-language comedians - ahh yeahhh! Hosted by Paul Salad-mone
+
+Musical accompaniment and vegetable puns by Caroline Clifford.
+
+Stand-up, sketch, musical comedy (or at least upbeat), improv all welcome.
+
+SPECIAL MUSICAL GUEST
+TBC
+
+SIGN-UP POLICY
+Sign-ups begin with Paul at 8pm, first come first serve with 10 spots available. We will not accept advanced bookings. We will set the running order according to our discretion. Every comedian will get 7 minutes. Show starts at 8:30pm.
+
+2€ entry.
+
+Free drink for participants
+
+Event website
+<a rel="nowfollow" href="http://comedyinenglish.de/gemused">comedyinenglish.de/&hellip;</a>
+
+English language comedy listings in Berlin
+<a rel="nowfollow" href="http://comedyinenglish.de/">comedyinenglish.de/</a><!-- owner: 184196778359304 venue:  -->
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;TZID=Europe/Berlin:20121002T203000
 DTEND;TZID=Europe/Berlin:20121002T233000
 SUMMARY:English Comedy Night
